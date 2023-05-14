@@ -1,7 +1,17 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-.alert-container{}
+.alert-container{
+    z-index: 2;
+    position: relative;
+    padding: 0;
+}
+.site-wide-alert{
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: gold;
+}
 
 .callout-container{
     height: 100vh;
@@ -14,6 +24,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .quotes-container{}
@@ -21,6 +32,43 @@ body{
 .monthly-features-container{}
 
 .features-container{}
+
+/* navbar */
+.navalert-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar{
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25);
+    z-index: 1;
+}
+.navbar .navbartoggler{
+    border: 0;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar a{
+    font-weight: bold;
+}
 
 /* jumbotron */
 .jumbotron{
@@ -31,8 +79,55 @@ body{
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-.jumbotron small{
-    color: rgb(243, 39, 39);
+.jumbotron p{
+    color: aliceblue;
+}
+
+small{
+    font-size: 60%;
+    font-style: italic;
+    color: #e79e9e;
+}
+
+.mark,
+mark {
+    padding: 0.2em;
+    background-color: #f8fcd4;
+    border-radius: 10px;
+}
+
+.blockdivider{
+    width: 75px;
+    height: 5px;
+    margin: 0px auto 30px;
+    background-color: #a0422c;
+
+}
+
+.opaque-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* 
+Buttons */
+.btn--cta{
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+.btn--red{
+    color: white;
+    background-color: #f05f40;
+    border-color: white;
+}
+.btn--red:hover{
+    background-color: #ff2d00;
+    border-color: #f05f40;
 }
