@@ -4,8 +4,16 @@ body{
 .alert-container{}
 
 .callout-container{
-    background-color: blue;
-    height: vh;
+    height: 100vh;
+    background: url(../images/whiskey-background.jpg) no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .quotes-container{}
@@ -13,3 +21,18 @@ body{
 .monthly-features-container{}
 
 .features-container{}
+
+/* jumbotron */
+.jumbotron{
+    background-color: transparent;
+}
+
+.jumbotron-header{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.jumbotron small{
+    color: rgb(243, 39, 39);
+}
