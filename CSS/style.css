@@ -103,10 +103,13 @@ mark {
     width: 75px;
     height: 5px;
     margin: 0px auto 30px;
-    background-color: #a0422c;
+    background-color: #444;
 
 }
 
+.blockdivider--orange{
+    background-color: #a0422c;
+}
 .opaque-overlay{
     position: absolute;
     top: 0;
@@ -130,4 +133,13 @@ Buttons */
 .btn--red:hover{
     background-color: #ff2d00;
     border-color: #f05f40;
+}
+.page-header{
+    border-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+.page-header h2{
+    margin-top: 0;
+  
 }
